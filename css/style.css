@@ -1,55 +1,67 @@
 body{
 	margin:auto;
 	width: 90%;
+	font-family: 'Open Sans',sans-serif !important;
 }
-#support,#testimonial,#about,#contact	{
+#support,#testimonial,#carapesan{
 	height: 450px;
 	background:white;
 }
-#testimonial{
-	background: #ecf0f1;	
-	height: 300px;
+#news{
+	height: 650px;
 }
-#about{
-	background: #2d3e50;	
+#testimonial,#carapesan{
+	background: #2D3E50;	
+	height: 240px;
+	clear: both;
+}
+#carapesan{
+	background: white;	
 }
 #contact{
 	background: #1b2530;
 }
 #home{
 	/*box-shadow: 0 -3px 6px #bbb;*/
+	margin-top: 125px;
 }
-
+#hr-header{
+	height: 3px;
+	width: 100%;
+	background: #DA3E2A;
+}
 #menu{
 	background:white;
+	position: fixed;
+    z-index: 3;
+    width: 90%;
 }
 .menu{
 	margin: auto;
-	width: 50%;
+	width: 60%;
 	height: 60px;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 .menu a{
 	color:black;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 }
-.nav-pills > li.active > a{
-	color: #fff;
-    background-color: #e84c3d !important;
+.nav-pills > li.active > a:active{
+	color: #fff !important;
+    background-color: #DA3E2A !important;
     border-radius: 30px !important;
 }
 .nav-pills > li > a:hover{
 	color: #fff;
-    background-color: #e84c3d !important;
+    background-color: #DA3E2A !important;
     border-radius: 30px !important;
 }
 .logo-container{
+	float: left;
 	padding:20px 5px 5px 5px;
 	background: rgba(255, 255, 255, 0.56);
 	width: 100px;
-	margin: auto;
-	border-bottom-right-radius: 50px;
-	border-bottom-left-radius: 50px;
 }
 .home{
 	background: url(../img/bg4.jpg);
@@ -70,6 +82,7 @@ body{
 	border: 2px solid white;
 	color:white;
 	border-radius: 0 !important;
+	font-weight: bold;
 }
 .btn:hover{
 	background: white;
@@ -78,6 +91,7 @@ body{
 .title{
 	margin: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
 	font-size: 25pt;
 	width: 30%; 
 	display: table;
@@ -89,20 +103,14 @@ body{
 	display: table;
 }
 #support ul li{
-	display:table;
-	height: 300px;
-	width: 300px;
+	display:inline-block;
 	margin:10px;
-	float: left;
-	margin-bottom: -140px;
-}
-#support img{
-	margin-bottom: 10px;
-	box-shadow: 0 1px 5px 0 #bbb;
+	background: white;
+	padding: 10px;
+	box-shadow: 0 1px 2px 0 #bbb;
 }
 #support{
-	background: #f0f0f0;
-	height: 480px;
+	height: 650px;
 }
 
 .support{
@@ -119,63 +127,108 @@ body{
 }
 
 /*news*/
+#news{
+	height: 600px;
+}
 #news ul{
 	margin: auto;
 	display: table;
 }
 #news ul li{
 	display:table;
-	height: 300px;
+	height: 350px;
 	width: 250px;
 	margin:10px;
 	float: left;
 	margin-bottom: -140px;
 	background: white;
-	padding: 20px 5px;
+	padding: 20px 15px;
 	font-size: 10pt;
 }
 #news img{
 	margin-bottom: 10px;
-	box-shadow: 0 1px 5px 0 #bbb;
 }
 #news{
 	background: #f0f0f0;
-	height: 480px;
 }
 
 .news{
 	margin:auto;
 }
 .btn-news{
-	padding:10px;
+	padding:5px;
 	margin: auto;
+	background: #48484A;
+	color: white;
+	border-radius: 2px;
+}
+#news .thead{
+	font-weight: bold;
+	font-size: 13pt;
+}
+#news .date{
+	font-size: 9pt;
+}
+#news .content{
+	clear: both;
+	text-align: justify;
 }
 
 
 /*testimonial*/
-#testimonial ul{
+#testimonial ul,#carapesan ul{
 	list-style: none;
 }
-#testimonial ul li{
+#testimonial ul li,#carapesan ul li{
 	display: inline-block;
 	margin:10px;
 }
 .icon-testimonial{
-	border-radius:50px;
-	height: 80px;width: 80px;
-	box-shadow: 0 2px 3px 0 #bbb;
+	border-radius:100px;
+	height: 200px;width: 200px;
 	margin: auto;
 	background-size: cover !important;
 }
 .text-testimonial{
 	border-radius: 5px;
-	width: 350px;
+	width: 300px;
 	padding: 10px 10px;
 	background: white;
-	box-shadow: 0 2px 5px 0 #bbb;
 	display: table;
+	font-size: 12pt;
 }
 .text-testimonial .from{
 	font-style: italic;
 	font-size: 10pt;
+
+}
+
+/*map*/
+#map{
+	height: 300px;
+	clear: both;
+	border:1px solid #bbb;	
+}
+
+/*cara pesan*/
+#carapesan{
+	height: 630px;
+}
+#carapesan .text-testimonial p{
+	font-weight: bold;
+}
+.btn-pesan-carapesan{
+	padding: 20px 50px;
+	border-radius: 10px;
+	background: #DA3E2A;
+	color: white;
+	outline: none;
+	border:0px;
+	font-weight: bold;
+}
+
+/*contact*/
+#contact{
+	height: 200px;
+	background: #f0f0f0;
 }
